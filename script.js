@@ -1,4 +1,4 @@
-class person{
+class Person{
 	constructor(name,age){
 		this.name=name;
 		this.age=age;
@@ -7,7 +7,7 @@ class person{
         console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
     }
 }
-class Employee extends person{
+class Employee extends Person{
 	constructor(name,age,jobTitle){
 		super(name, age);
 		this.jobTitle=jobTitle;
@@ -18,8 +18,8 @@ class Employee extends person{
 		}
 }
 
-let personDetails=new person("Alice",25);
-personDetails.greet();
+const person=new Person("Alice",25);
+person.greet();
 
-let employyeeDeatilas=new Employee("Bob",30,"Manager");
-employyeeDeatilas.jobGreet();
+const employee=new Employee("Bob",30,"Manager");
+employee.jobGreet();
